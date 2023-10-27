@@ -6,72 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Seu Título Aqui</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .primeira {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-            max-width: 1080px;
-            max-height: 1920px;
-            margin: auto;
-        }
-
-        .segunda {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        #player {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="primeira">
-        <div class="segunda">
-            <div id="player"></div>
-        </div>
-    </div>
-
-    <script>
-        var player;
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                height: '1920',
-                width: '1080',
-                videoId: 'c1mBDQI3XCA', // Substitua pelo ID do seu vídeo do YouTube
-                playerVars: {
-                    'controls': 0, // Oculta os controles do YouTube, exceto o botão de play inicial
-                    'enablejsapi': 1, // Ativa a API do YouTube
-                    'disablekb': 1, // Impede o uso do teclado no player
-                    'autoplay': 1, // Inicia o vídeo automaticamente
-                    'loop': 1, // Repete o vídeo após terminar
-                    'modestbranding': 1, // Remove o logo do YouTube
-                    'rel': 0, // Impede que vídeos relacionados apareçam ao final
-                    'showinfo': 0 // Oculta informações do vídeo
-                },
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-        }
-
-        function onPlayerReady(event) {
-            event.target.playVideo(); // Inicia o vídeo quando estiver pronto
-        }
-    </script>
-    <script src="https://www.youtube.com/iframe_api"></script>
+    <div style="position:relative;padding-top:177.77777777777777%;"><iframe id="panda-8d4c0db8-6763-43fe-ae26-993cbf5f7b92" src="https://player-vz-addc139a-17d.tv.pandavideo.com.br/embed/?v=8d4c0db8-6763-43fe-ae26-993cbf5f7b92" style="border:none;position:absolute;top:0;left:0;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true width="100%" height="100%" fetchpriority="high"></iframe></div>
 </body>
 
 </html>
